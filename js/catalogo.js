@@ -40,7 +40,8 @@ function agregarLibro(){
 
   alert("Registro completado con exito");
 
-  inptTituloLibro.value.trim();
-  inptAutorLibro.value.trim();
-  inptIsbnLibro.value.trim();
+  inptTituloLibro.value = "";
+  inptAutorLibro.value = "";
+  inptIsbnLibro.value = "";
 }
+
