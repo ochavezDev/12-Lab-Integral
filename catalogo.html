@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <h2 class="text-xl font-bold mb-4">Registro de Libros</h2>
+
+  <!-- FORMULARIO -->
+  <div class="bg-white p-4 shadow mb-6">
+    <input id="tituloLibro" class="border p-2 w-full mb-2" placeholder="Título">
+    <input id="autorLibro" class="border p-2 w-full mb-2" placeholder="Autor">
+    <input id="isbnLibro" class="border p-2 w-full mb-2" placeholder="ISBN">
+    <button id="btnAgregarLibro" class="bg-blue-600 text-white p-2 w-full">
+      Agregar libro
+    </button>
+  </div>
+
+  <!-- TABLA -->
+  <div class="bg-white p-4 shadow">
+    <h3 class="font-semibold mb-2">Listado de libros</h3>
+
+    <table class="w-full border border-collapse">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="border p-2">Título</th>
+          <th class="border p-2">Autor</th>
+          <th class="border p-2">ISBN</th>
+          <th class="border p-2">Estado</th>
+          <th class="border p-2">Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaLibros">
+        <!-- EJEMPLO -->
+        <tr>
+          <td class="border p-2">El Quijote</td>
+          <td class="border p-2">Miguel de Cervantes</td>
+          <td class="border p-2">123456</td>
+          <td class="border p-2">Disponible</td>
+          <td class="border p-2">
+            <button class="bg-red-500 text-white px-2">Eliminar</button>
+          </td>
+        </tr>
+        <!-- FILAS GENERADAS CON JS -->
+      </tbody>
+    </table>
+  </div>
+  <script src="/js/catalogo.js"></script>
+</body>
+</html>

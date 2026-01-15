@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+  <h2 class="text-xl font-bold mb-4">Control General</h2>
+
+  <!-- CONTADORES -->
+  <div class="bg-white p-4 shadow mb-6 flex gap-6">
+    <div>Total libros: <span id="totalLibros">1</span></div>
+    <div>Prestados: <span id="librosPrestados">1</span></div>
+    <div>Disponibles: <span id="librosDisponibles">0</span></div>
+  </div>
+
+  <!-- TABLA DISPONIBLES -->
+  <div class="bg-white p-4 shadow mb-6">
+    <h3 class="font-semibold mb-2">Libros disponibles</h3>
+
+    <table class="w-full border border-collapse">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="border p-2">Título</th>
+          <th class="border p-2">Autor</th>
+        </tr>
+      </thead>
+      <tbody id="tablaDisponibles">
+        <!-- vacío a propósito -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
